@@ -26,6 +26,8 @@ public class Zadanie12_3 {
                 set.add(liczby.get(i));
                 repeats.put(liczby.get(i), ++duplicate + 1);
             } else {
+                set.add(liczby.get(i));
+                repeats.put(liczby.get(i), ++duplicate);
                 duplicate = 0;
             }
         }
@@ -37,6 +39,7 @@ public class Zadanie12_3 {
         for (int sety : set) {
             System.out.println(sety + " - liczba wystąpień: " + repeats.get(sety));
         }
+
         read.close();
     }
 }
